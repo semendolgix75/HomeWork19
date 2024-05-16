@@ -32,6 +32,14 @@ public class Numbers {
 
         return result;
     }
+
+    public String unique(List<String> words) {
+        Set<String> uniqueWord = new HashSet<>();
+        for (String word : words) {
+            uniqueWord.add(word);
+        }
+        return uniqueWord.toString();
+    }
     //## Задание 3
     //Напишите код, который выводит в консоль все уникальные слова из списка слов, в котором могут встречаться дубли.
     //  Код должен работать с любой последовательностью и объемом списка слов.

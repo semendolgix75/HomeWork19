@@ -14,6 +14,9 @@ public class Main {
         System.out.println("Напишите код, с помощью которого можно напечатать только четные числа без повторений в порядке возрастания. ");
         System.out.println(numbers.evenNumber(nums));
 
+        System.out.println("код, который выводит в консоль все уникальные слова из списка слов");
+        List<String> words=new ArrayList<>(List.of("apple","limon","apple","watermelon","potato","limon"));
+        System.out.println(numbers.unique(words));
 
 
 
