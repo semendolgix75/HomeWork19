@@ -25,17 +25,47 @@ public class Numbers {
 
 //    System.out.println("numbers = " + numbers);
         for (Integer number : numbers) {
-            if (number % 2 == 0)
-                evenNums.add(number);
+            if (number % 2 == 0) evenNums.add(number);
         }
         for (Integer evenNum : evenNums) result = result + " " + evenNum;
 
         return result;
     }
-    //## Задание 3
 
+    //## Задание 3
     //Напишите код, который выводит в консоль все уникальные слова из списка слов, в котором могут встречаться дубли.
     //  Код должен работать с любой последовательностью и объемом списка слов.
+    public String unique(List<String> words) {
+        Set<String> uniqueWord = new TreeSet<>();
+        for (String word : words) {
+            uniqueWord.add(word);
+        }
+        return uniqueWord.toString();
+    }
 
+    //## Задание 4
+//
+//Напишите код, который выводит в консоль количество дублей для каждого уникального слова.
+// Код должен работать с любой последовательностью и объемом списка слов.
+    public void numberDuplicates(List<String> strings) {
+        Set<String> uniques = new HashSet<>();
+        for (String string : strings) {
+            uniques.add(string);
+        }
+        System.out.println(uniques.toString());
+        System.out.println(strings.toString());
+
+        for (String unique : uniques) {
+            int duplicates = 0;
+            for (String string : strings) {
+                if (string.equals(unique)) {
+                    duplicates = duplicates + 1;
+                }
+            }
+                System.out.println(duplicates);
+        }
+
+
+    }
 
 }
