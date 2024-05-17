@@ -18,7 +18,9 @@ public class Main {
         List<String> words=new ArrayList<>(List.of("apple","limon","apple","watermelon","potato","limon"));
         System.out.println(numbers.unique(words));
 
-
+        System.out.println("Напишите код, который выводит в консоль количество дублей для каждого уникального слова. ");
+        List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
+        numbers.numberDuplicates(strings);
 
     }
 }
